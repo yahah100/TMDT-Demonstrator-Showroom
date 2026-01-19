@@ -4,7 +4,7 @@ services:
   frontend:
     container_name: showroom-frontend
     build:
-      context: .  # The directory containing the Dockerfile
+      context: .
       dockerfile: Dockerfile 
     restart: always
     labels:
@@ -14,7 +14,7 @@ services:
       - "traefik.http.routers.frontend.tls.certresolver=myresolver"
       - "traefik.http.services.frontend.loadbalancer.server.port=8080"
   traefik:
-    image: "traefik:v2.10"
+    image: "traefik:v3.6"
     command:
       - "--log.level=DEBUG"
       - "--api.insecure=false"
@@ -43,7 +43,6 @@ services:
       # - "8080:8080"
     volumes:
       - ./letsencrypt:/letsencrypt
-      - ./access.log:/var/log/traefik
+      - ./access.log:/var/log/traefik/access.log
       - /var/run/docker.sock:/var/run/docker.sock:ro
     restart: unless-stopped
-
