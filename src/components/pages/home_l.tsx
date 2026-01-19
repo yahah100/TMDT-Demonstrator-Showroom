@@ -34,7 +34,7 @@ export default function Home_L() {
                 </Col>
                 <Col span={6}>
                     <Card hoverable cover={<img className="card-image" alt="Clean and Elegant" src={logo_2} />}
-                          onClick={() => handleCardClickNewTap('https://welding-ai.tmdt.uni-wuppertal.de/')}
+                          onClick={() => handleCardClickNewTap('https://welding-ai.tmdt.uni-wuppertal.de/xai')}
                     >
                         <Meta title={<h1 className="card-title">KI-basierte Qualitätskontrolle beim Schweißen</h1>} />
                     </Card>
@@ -59,19 +59,19 @@ export default function Home_L() {
                 </Col>
                 <Col span={6}>
                     <Card hoverable cover={<img className="card-image" alt="Unlimited Features" src={logo_5} />}
-                          onClick={() => handleCardClickNewTap('https://hws.tmdt.uni-wuppertal.de/public-dashboards/be1b084d97ef41e08be1c847b9f4d5ad?orgId=1')}
+                          onClick={() => handleCardClickNewTap('https://hwsdemo.tmdt.uni-wuppertal.de/')}
                     >
                         <Meta title={<h1 className="card-title">Bergisches Hochwasserwarnsystem</h1>} />
                     </Card>
                 </Col>
-                <Col span={6}>
+                {/* <Col span={6}>
                     <Card hoverable cover={<img className="card-image" alt="Advanced Options" src={logo_6} />}
                           onClick={() => handleCardClickNewTap('https://inspection-ai.tmdt.uni-wuppertal.de/home')}
                     >
                         <Meta title={<h1 className="card-title">Neural Network Doctor (coming soon)
                         </h1>} />
                     </Card>
-                </Col>
+                </Col> */}
             </Row>
         </>
     );
