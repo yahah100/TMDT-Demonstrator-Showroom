@@ -6,7 +6,7 @@ import logo_2 from "./../images/KI-basierte Qualitätskontrolle beim Schweißen.
 import logo_3 from "./../images/KI-basierte Planung von Produktionsabläufen.png";
 import logo_4 from "./../images/Embeddings von Customer Journey Data.png";
 import logo_5 from "./../images/Bergisches Hochwasserwarnsystem.png";
-import logo_6 from "./../images/Neural Network Doctor.png";
+import logo_6 from "./../images/xai4driving.png";
 
 
 
@@ -27,21 +27,21 @@ export default function Home_L() {
             <Row className={"padding-top"} justify="space-evenly">
                 <Col span={6}>
                     <Card hoverable cover={<img className="card-image" alt="Modern Design" src={logo_1} />}
-                          onClick={() => handleCardClickNewTap('https://inspection-ai.tmdt.uni-wuppertal.de/')}
+                        onClick={() => handleCardClickNewTap('https://inspection-ai.tmdt.uni-wuppertal.de/')}
                     >
                         <Meta title={<h1 className="card-title">Automatisierte Schadbefundung an Güterwagons</h1>} />
                     </Card>
                 </Col>
                 <Col span={6}>
                     <Card hoverable cover={<img className="card-image" alt="Clean and Elegant" src={logo_2} />}
-                          onClick={() => handleCardClickNewTap('https://welding-ai.tmdt.uni-wuppertal.de/xai')}
+                        onClick={() => handleCardClickNewTap('https://welding-ai.tmdt.uni-wuppertal.de/xai')}
                     >
                         <Meta title={<h1 className="card-title">KI-basierte Qualitätskontrolle beim Schweißen</h1>} />
                     </Card>
                 </Col>
                 <Col span={6}>
                     <Card hoverable cover={<img className="card-image" alt="Great Support" src={logo_3} />}
-                          onClick={() => handleCardClickNewTap('http://ai-planner.tmdt.uni-wuppertal.de/')}
+                        onClick={() => handleCardClickNewTap('http://ai-planner.tmdt.uni-wuppertal.de/')}
                     >
                         <Meta title={<h1 className="card-title">KI-basierte Planung von Produktionsabläufen
                         </h1>} />
@@ -51,7 +51,7 @@ export default function Home_L() {
             <Row className={"padding-top"} justify={"space-evenly"}>
                 <Col span={6}>
                     <Card hoverable cover={<img className="card-image" alt="Easy to customise" src={logo_4} />}
-                          onClick={() => handleCardClickNewTap('https://customer-embedding.tmdt.uni-wuppertal.de/')}
+                        onClick={() => handleCardClickNewTap('https://customer-embedding.tmdt.uni-wuppertal.de/')}
                     >
                         <Meta title={<h1 className="card-title">Embeddings von Customer Journey Data
                         </h1>} />
@@ -59,19 +59,19 @@ export default function Home_L() {
                 </Col>
                 <Col span={6}>
                     <Card hoverable cover={<img className="card-image" alt="Unlimited Features" src={logo_5} />}
-                          onClick={() => handleCardClickNewTap('https://hwsdemo.tmdt.uni-wuppertal.de/')}
+                        onClick={() => handleCardClickNewTap('https://hwsdemo.tmdt.uni-wuppertal.de/')}
                     >
                         <Meta title={<h1 className="card-title">Bergisches Hochwasserwarnsystem</h1>} />
                     </Card>
                 </Col>
-                {/* <Col span={6}>
+                <Col span={6}>
                     <Card hoverable cover={<img className="card-image" alt="Advanced Options" src={logo_6} />}
-                          onClick={() => handleCardClickNewTap('https://inspection-ai.tmdt.uni-wuppertal.de/home')}
+                        onClick={() => handleCardClickNewTap('https://xai4driving.tmdt.uni-wuppertal.de/')}
                     >
-                        <Meta title={<h1 className="card-title">Neural Network Doctor (coming soon)
+                        <Meta title={<h1 className="card-title"> XAI4AD - Explainable AI for Autonomous Driving
                         </h1>} />
                     </Card>
-                </Col> */}
+                </Col>
             </Row>
         </>
     );
